@@ -1,15 +1,18 @@
 package stepDef;
 
+import java.io.IOException;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import resources.TestDataBuild;
 
 public class RcbTeamValidationsStepDef {
 
 	@Given("a JSON response is returned with the team's player information for RCB Team")
-	public void a_json_response_is_returned_with_the_team_s_player_information_for_rcb_team() {
+	public void a_json_response_is_returned_with_the_team_s_player_information_for_rcb_team() throws IOException {
 	    // Write code here that turns the phrase above into concrete actions
-	    throw new io.cucumber.java.PendingException();
+	    TestDataBuild.setData();
 	}
 	
 	@When("I check the number of foreign players in the team")
